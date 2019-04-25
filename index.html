@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BootStrap Time Dialog Example</title>
+
+        <!-- Load Bootstrap and JQuery -->
+        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+        <script type="text/javascript" src="lib/js/jquery-3.3.1.slim.min.js"></script>
+        <script type="text/javascript" src="lib/js/popper.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+
+        <!-- Load Main Styles -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    <body>
+        <!-- Modal -->
+        <div class="modal fade" id="basicTimeModal" tabindex="-1" role="dialog" aria-labelledby="TestDialogLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="basicTimeModalLabel">Test Time Modal</h5>
+                        <button type="button" class="close btn-cancel" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-body-content"></p>
+                        <p class="modal-body-notify"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-ok" data-dismiss="modal">Take Action</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p id="timeModalResult"></p>
+        </div>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
